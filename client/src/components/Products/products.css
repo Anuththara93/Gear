@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Leckerli+One&family=Open+Sans&family=Phudu&family=Poppins&family=Roboto:ital@0;1&family=Shrikhand&display=swap');
+
+.products_container {
+    flex-direction: row;
+    width: 100%;
+}
+
+.products_container_list {
+    padding: 50px;
+    display: grid;
+    grid-gap: 10px;
+    flex-direction: column;
+    grid-template-columns: 25% 25% 25% 25%;
+    background: linear-gradient(to bottom, #0C0C14, rgb(58, 58, 57));
+    background-color: #2a2a25;
+
+}
+
+.products_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0C0C14;
+    padding: 25px 0 0 0;
+    margin-bottom: -25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.aaaaaaaaaaaa {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
