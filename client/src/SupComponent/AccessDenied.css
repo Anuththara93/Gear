@@ -1,0 +1,9 @@
+.AccessDenied {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    background-color: #353b48;
+    color: white;
+    height: 775px;
+}
