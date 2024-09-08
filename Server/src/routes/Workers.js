@@ -4,16 +4,20 @@ import { WorkerModel } from "../models/Workers.js";
 const router = express.Router();
 
 router.post("/register", async (req, res) => {
-    const { name, nic, contactno, address } = req.body;
-    const worker = await WorkerModel.findOne({ nic });
+    try {
+        const { name, nic, contactno, address } = req.body;
+        const worker = await WorkerModel.findOne({ nic });
 
-    if (worker) {
-        return res.status(400).send('user already exists');
+        if (worker) {
+            return res.status(400).send('user already exists');
+        }
+
+        const newWoker = new WorkerModel({ name, nic, address, contactno });
+        await newWoker.save();
     }
-
-    const newWoker = new WorkerModel({ name, nic, address, contactno });
-
-    await newWoker.save();
+    catch (e) {
+        res.send('error')
+    }
     res.json({ message: "User registerd Successfully" });
 });
 
@@ -44,7 +48,7 @@ router.put('/worker/:id', async (req, res) => {
         }
         res.send(worker);
     }
-    catch {
+    catch (e) {
         res.send('error')
     }
 
@@ -53,12 +57,17 @@ router.put('/worker/:id', async (req, res) => {
 });
 
 router.delete('/worker/:id', async (req, res) => {
-
-    const worker = await WorkerModel.findByIdAndRemove(req.params.id);
-    if (!worker) {
-        return res.send("Not Found");
+    try {
+        const worker = await WorkerModel.findByIdAndRemove(req.params.id);
+        if (!worker) {
+            return res.send("Not Found");
+        }
+        res.send(worker);
     }
-    res.send(worker);
+    catch (e) {
+        res.send('error')
+    }
+
 })
 
 
