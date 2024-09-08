@@ -60,6 +60,43 @@ function App() {
 
     </div >
   );
+  function Adminverify({ children }) {
+    if (!cookies.admin_token) {
+      return <>{children}</>;
+
+    }
+    return <Navigate to={'/adminlogged'} />
+  }
+
+  function Adminverify2({ children }) {
+    if (cookies.admin_token) {
+      return <>{children}</>;
+
+    }
+    return <Navigate to={'/admin'} />
+  }
+
+  function Userverify({ children }) {
+    if (!cookies.access_token) {
+      console.log('sddd')
+      return <>{children}</>;
+
+    }
+    console.log('sddd')
+    return <Navigate to={'/'} />
+  }
+
+
+  function Navigate({ to }) {
+    const navigate = useNavigate();
+
+    React.useEffect(() => {
+      navigate(to);
+    }, [navigate, to]);
+
+    return null;
+  }
+
 }
 
 export default App;
