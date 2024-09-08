@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Leckerli+One&family=Open+Sans&family=Phudu&family=Poppins&family=Roboto:ital@0;1&family=Rubik:wght@500&family=Shrikhand&display=swap');
+
+.registermain {
+    background-image: url('../../../public/Register.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: end;
+    font-family: 'Roboto', sans-serif;
+}
+
+.registerform {
+    margin-top: 50px;
+    margin-right: 50px;
+    width: 40%;
+    height: 90%;
+    opacity: 90%;
+    background-color: #b2bec3;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+
+.registerformgroup {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.registerformh1 {
+    color: black;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerformlabel {
+    width: 225px;
+    margin-bottom: 7px;
+}
+
+.registerforminput {
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 27px;
+}
+
+.registerbutton {
+    margin-top: 20px;
+    width: 250px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFA801;
+    /* Change this to your desired button color */
+    color: black;
+    /* Change this to your desired text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.regbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
