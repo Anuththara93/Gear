@@ -1,17 +1,73 @@
-.footer{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Leckerli+One&family=Open+Sans&family=Phudu&family=Poppins&family=Roboto:ital@0;1&family=Shrikhand&display=swap');
+
+.footerr {
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    color: aliceblue;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+    flex-direction: column;
 }
 
-.footer span{
-  
-    &:first-child{
-      font-weight: bold;
-    }
+.footermain {
+    display: flex;
+}
 
-    &:last-child{
-      font-size: 14px;
-    }
+.footerdiv {
+    display: inline-block;
+    margin-left: 16%;
+    width: 12%;
+    height: 180px;
+    margin-top: 15px;
+}
+
+.footerdiv h2 {
+    padding: 0;
+    margin: 10px 0 15px 0; 
+    font-size: 23px;
+    font-weight: 400;
+    cursor: default;
+    font-family: 'Inter', sans-serif;
+}
+
+.footerul, .footeri {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    cursor: pointer;
+}
+
+.footeri {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footerul li:hover, .footeri:hover {
+    color: #FFA801;
+}
+
+.footerc {
+    margin-top: 30px;
+    padding-left: 45%;
+}
+
+.footerc p {
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+}
+
+.divl {
+    display: flex;
+    flex-direction: column;
+}
+
+.footeri p {
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footerh2cd {
+    margin-bottom: 10px;
+    font-weight: 300;
 }

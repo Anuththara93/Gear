@@ -1,0 +1,44 @@
+.aboutusdiv1,
+.aboutusdiv2,
+.aboutusdiv3 {
+    position: absolute;
+    color: aliceblue;
+}
+
+.aboutusimg1,
+.aboutusimg2,
+.aboutusimg3 {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 700px;
+}
+
+.aboutusdiv1 {
+    top: 25%;
+    left: 5%;
+    right: 60%;
+}
+
+.aboutusdiv2 {
+    top: 120%;
+    left: 60%;
+    right: 5%;
+}
+
+.aboutusdiv3 {
+    top: 210%;
+    left: 5%;
+    right: 60%;
+}
+
+.aboutusp {
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.aboutush1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 35px;
+    line-height: 1.5;
+}
