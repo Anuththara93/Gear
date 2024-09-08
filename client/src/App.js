@@ -60,6 +60,7 @@ function App() {
 
     </div >
   );
+  //admin
   function Adminverify({ children }) {
     if (!cookies.admin_token) {
       return <>{children}</>;
