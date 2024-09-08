@@ -1,0 +1,41 @@
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+
+
+.usertablebutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.products {
+    width: auto;
+    height: 590px;
+    overflow: scroll;
+}
+
+.info button {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.usertable {
+    overflow: scroll;
+    background-color: #dcdde1;
+}
+
+.usertable_td_img {
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}

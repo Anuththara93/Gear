@@ -1,0 +1,40 @@
+.Order-main {
+    width: 100%;
+    height: 635px;
+    background-color: #2f3640;
+}
+
+.Order-table {
+    width: 100%;
+}
+
+.Order-main-norders {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Order-main-norders-left {
+    background-image: url('../../../public/Order.jpg');
+    width: 500px;
+    height: 580px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 10px 40px;
+    border: 1px solid white;
+}
+
+.Order-main-norders-right {
+    width: 500px;
+    height: 580px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
