@@ -1,0 +1,43 @@
+.Login-main {
+    width: 100%;
+    background-image: url('../../../public/Login.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 690px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.registerformgroup {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-left: 35px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 80%;
+    background-color: #636e72;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.login-form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerforminput1 {
+    width: 450px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 27px;
+}

@@ -1,0 +1,23 @@
+.NavbarProfile {
+    width: 100%;
+    height: 50px;
+    background-color: #2f3542;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+}
+
+.NavbarProfile-button {
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+    background-color: #ffa502;
+    width: 110px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px;
+}
